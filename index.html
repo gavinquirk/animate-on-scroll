@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Beer Ranker</title>
   </head>
@@ -36,7 +37,7 @@
         </div>
       </section>
       <!-- Section 2 -->
-      <section class="card">
+      <section class="card" data-aos="fade-left">
         <img
           src="https://thefullpint.com/wp-content/uploads/2017/02/Bottle-Logic-Ground-State.jpg"
           alt="Ground State - Breakfast Stout"
@@ -53,7 +54,7 @@
         </div>
       </section>
       <!-- Section 3 -->
-      <section class="card">
+      <section class="card" data-aos="fade-right">
         <img
           src="https://thefullpint.com/wp-content/uploads/2016/04/The-4B-Flight-Beer-1-Monkish-Brewing-Company-First-Things-First-Small-1024x683.jpg"
           alt="Monkish - First Things First"
@@ -70,7 +71,7 @@
         </div>
       </section>
       <!-- Section 4 -->
-      <section class="card">
+      <section class="card" data-aos="fade-left">
         <img
           src="https://i1.wp.com/wearebrewstuds.com/wp-content/uploads/2019/01/craft-beer-firestone-walker-mind-haze-neipa.gif?fit=800%2C533&ssl=1"
           alt="Firestone Walker - Mind Haze IPA"
@@ -87,7 +88,7 @@
         </div>
       </section>
       <!-- Section 5 -->
-      <section class="card">
+      <section class="card" data-aos="fade-right">
         <img
           src="https://www.newbelgium.com/globalassets/beer/fat-tire/fat_tire_package_1080x720.png"
           alt="Fat Tire - Amber Ale"
@@ -104,5 +105,12 @@
         </div>
       </section>
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1000
+      });
+    </script>
   </body>
 </html>
